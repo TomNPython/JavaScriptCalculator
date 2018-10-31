@@ -1,0 +1,34 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+  <h1 class='text-center' id='title'>Calculator</h1>
+  <div class='container text-center'>
+    <div id='display-field'></div>
+    <btn id='nine' class='btn btn-primary' onClick='updateDisplayField(9)'>9</btn>
+    <btn id='eight' class='btn btn-primary' onClick='updateDisplayField(8)'>8</btn>
+    <btn id='seven' class='btn btn-primary' onClick='updateDisplayField(7)'>7</btn>
+    <btn id='plus' class='btn btn-primary' onClick='updateDisplayField(operators[0])'>+</btn>
+    </br>
+  <btn id='six' class='btn btn-primary' onClick='updateDisplayField(6)'>6</btn>
+  <btn id='five' class='btn btn-primary' onClick='updateDisplayField(5)'>5</btn>
+  <btn id='four' class='btn btn-primary' onClick='updateDisplayField(4)'>4</btn>
+  <btn id='minus' class='btn btn-primary' onClick='updateDisplayField(operators[1])'>-</btn>
+  </br>
+<btn id='three' class='btn btn-primary' onClick='updateDisplayField(3)'>3</btn>
+<btn id='two' class='btn btn-primary' onClick='updateDisplayField(2)'>2</btn>
+<btn id='one' class='btn btn-primary' onClick='updateDisplayField(1)'>1</btn>
+<btn id='times' class='btn btn-primary' onClick='updateDisplayField(operators[2])'>*</btn>
+<br>
+<btn id='clear' class='btn btn-danger' onClick='clearDisplay()'>CE</btn>
+<btn id='zero' class='btn btn-primary' onClick='updateDisplayField(0)'>0</btn>
+<btn id='dot' class='btn btn-primary' onClick='updateDisplayField(operators[4])'>.</btn>
+<btn id='del' class='btn btn-danger' onClick='delOne()'>del</btn>
+<btn id='equals' class='btn btn-primary' onClick='getResult()'>=</btn>
+<btn id='divide' class='btn btn-primary' onClick='updateDisplayField(operators[3])'>/</btn>
+ 
+  </div>
+  <script type='text/javascript' src='scripts.js'></script>
+</body>
